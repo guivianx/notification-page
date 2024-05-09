@@ -1,0 +1,190 @@
+
+:root {
+    /*primario*/
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    /*neutro*/
+    --white: hsl(0, 0%, 100%);
+    --very-ligth-grayish-blue: hsl(210, 60%, 98%);
+    --ligth-grayish-blue-1: hsl(211, 68%, 94%);
+    --ligth-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-grayish-blue: hsl(224, 21%, 14%);
+
+    /*body copy*/
+    --font-size-paragraph: 16px;
+    --font-size-title: 35px;
+    --font-size-title-small: 25px;
+
+
+    /*font*/
+    --font: "PLus Jakarta Sans";
+    --weight-1: 500;
+    --weight-2: 800;
+}
+
+body {
+    background-color: var(--very-ligth-grayish-blue);
+    font-family: var(--font);
+    font-size: var(--font-size-paragraph);
+    transition: heigth .3s ease-out .0s;
+    margin-top: 25px;
+}
+
+main {
+    max-width: 1440px; 
+    background-color: var(--white);
+    margin:  0 auto;
+    width: 720px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/*HEADER MAIN NOTI*/
+
+main .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .header .notiCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+main .header .notiCounter .title {
+    font-size: var(--font-size-title-small);
+    font-weight: var(--weight-2);
+}
+
+main .header .notiCounter .notiNumber {
+    font-size: var(--font-size-paragraph);
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: var(--weight-2);
+    padding: 2px 10px;
+    border-radius: 8px;
+}
+
+main .header .markAllReadButton {
+    color: var(--dark-grayish-blue);
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--weight-1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+main .header .markAllReadButton:hover {
+    color: var(--blue);
+}
+
+/*MAIN NOTI*/
+
+main ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main ul .notification {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    transition: .3s ease-in .0s;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: var(--font-size-paragraph);
+}
+
+main ul .notification img {
+    width: 50px;
+}
+
+main ul .notification div {
+    width: 100%;
+
+}
+
+main ul .notification .infoNoti {
+    display: flex;
+    align-items: center;
+}
+
+main ul .notification .infoNoti .userName {
+    font-weight: var(--weight-2);
+}
+
+main ul .notification .infoNoti .userName:hover { 
+    color: var(--blue);
+}
+
+
+main ul .notification .infoNoti .linkNoti {
+    font-weight: var(--weight-2);
+    color: var(--dark-grayish-blue);
+} 
+
+main ul .notification .infoNoti .linkNoti:hover {
+    color: var(--blue);
+}
+
+main ul .notification div .timeNoti {
+    color: var(--grayish-blue);
+    margin-top: 3px;
+}
+
+/*especifico para notificação com conteudo*/
+
+main ul .notification .iconUser {
+    align-self: baseline;
+}
+
+.contentNoti {
+    color: var(--dark-grayish-blue);
+    font-weight: var(--weight-1);
+    border-radius: 5px;
+    transition: .2s ease-out .0s;
+    font-size: var(--font-size-paragraph);
+    opacity: 0;
+    height: 0;
+}
+
+main ul .notification div .contentNoti:hover {
+    background-color: var(--ligth-grayish-blue-1);
+}
+
+/*NOTIFICATIONS ITEMS*/
+
+
+.unRead{
+    background-color: var(--very-ligth-grayish-blue);
+}
+
+.read {
+    opacity: 0;
+}
+
+.fa-circle {
+    position: relative;
+    font-size: 8px;
+    color: var(--red);
+    transition: .2s;
+    margin-left: 8px;
+    top: -2px;
+
+}
+
+.active {
+    height: auto;
+    opacity: 1;
+    padding: 18px;
+    margin-top: 15px;
+    border: 1px solid var(--ligth-grayish-blue-2);
+}

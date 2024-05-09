@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mediaqueries.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Notifications Page</title>
+
+</head>
+
+<body>
+
+  <main>
+    <header class="header">
+      <div class="notiCounter">
+        <p class="title">Notifications</p>
+        <p class="notiNumber"></p>
+      </div>
+      <p class="markAllReadButton">Mark all as read</p>
+    </header>
+
+    <ul>
+
+      <li class="notification unRead" title="mark as read">
+        <img class="iconUser" src="assets/images/avatar-mark-webber.webp" alt="icon-user">
+        <div>
+          <div class="infoNoti">
+            <p><a class="userName" title="Mark Webbwe">Mark Webber</a> reacted to your recent post <a
+                class="linkNoti">My first tournament today!</a> <i class="fa-solid fa-circle"></i>
+            </p>
+          </div>
+          <p class="timeNoti">1m ago</p>
+        </div>
+      </li>
+
+      <li class="notification unRead" title="mark as read">
+        <img class="iconUser" src="assets/images/avatar-angela-gray.webp" alt="icon-user">
+        <div>
+          <div class="infoNoti">
+            <p><a class="userName" title="Angela Gray">Angela Gray</a> followed you <i class="fa-solid fa-circle"></i>
+            </p>
+          </div>
+          <p class="timeNoti">5m ago</p>
+        </div>
+      </li>
+
+      <li class="notification unRead" title="mark as read">
+        <img class="iconUser" src="assets/images/avatar-jacob-thompson.webp" alt="icon-user">
+        <div>
+          <div class="infoNoti">
+            <p><a class="userName" title="Jacob Thompson">Jacob Thompson</a> has joined your group <a
+                class="linkNoti">Chess Club</a><i class="fa-solid fa-circle"></i>
+            </p>
+          </div>
+          <p class="timeNoti">1 day ago</p>
+        </div>
+      </li>
+
+      <li class="notification unRead" title="mark as read">
+
+        <img class="iconUser" src="assets/images/avatar-rizky-hasanuddin.webp" alt="icon-user">
+
+        <div>
+          <div class="infoNoti">
+            <p title="View message" class="viewMessage"><a class="userName" title="Rizky Hasanuddin">Rizky
+                Hasanuddin</a> sent you a private message <i class="fa-solid fa-circle"></i>
+            </p>
+          </div>
+
+          <p class="timeNoti">5 day ago</p>
+
+          
+          
+          <p class="contentNoti">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.</p>
+        </div>
+      </li>
+
+      <li class="notification unRead" title="mark as read">
+        <img class="iconUser" src="assets/images/avatar-kimberly-smith.webp" alt="icon-user">
+        <div>
+          <div class="infoNoti">
+            <p><a class="userName" title="Kimberly Smith">Kimberly Smith</a> commented on your picture <i
+                class="fa-solid fa-circle"></i></p>
+          </div>
+          <p class="timeNoti">1 week ago</p>
+        </div>
+        <img src="assets/images/image-chess.webp" alt="image chess">
+      </li>
+
+      <li class="notification unRead" title="mark as read">
+        <img class="iconUser" src="assets/images/avatar-nathan-peterson.webp" alt="icon-user">
+        <div>
+          <div class="infoNoti">
+            <p><a class="userName" title="Nathan Peterson">Nathan Peterson</a> reacted to your recent post <a
+                class="linkNoti">5 end-games strategies to increase your win rate</a> <i class="fa-solid fa-circle"></i>
+            </p>
+
+          </div>
+          <p class="timeNoti">2 weeks ago</p>
+        </div>
+      </li>
+
+      <li class="notification unRead" title="mark as read">
+        <img class="iconUser" src="assets/images/avatar-anna-kim.webp" alt="icon-user">
+        <div>
+          <div class="infoNoti">
+            <p><a class="userName">Anna Kim</a> left the group <a class="linkNoti">Chess Club</a> <i
+                class="fa-solid fa-circle"></i>
+            </p>
+          </div>
+          <p class="timeNoti">2 weeks ago</p>
+        </div>
+      </li>
+
+    </ul>
+  </main>
+  <script src="assets/scripts/index.js"></script>
+</body>
+
+</html>
